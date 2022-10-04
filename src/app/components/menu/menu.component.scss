@@ -1,0 +1,27 @@
+.menu-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.menu-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-sidenav {
+    padding: 20px;
+    width: 300px;
+}
+
+.menu-sidenav .mat-list-base {
+    width: 100%;
+}
+
+.show-filters {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

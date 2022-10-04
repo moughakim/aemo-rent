@@ -8,6 +8,9 @@ import { MainComponent } from './components/main/main.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SharedModule } from './shared/shared.module';
+import { FiltersComponent } from './components/filters/filters.component';
+import { GridContainerComponent } from './components/grid-container/grid-container.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,15 @@ import { FooterComponent } from './components/footer/footer.component';
     MainComponent,
     MenuComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    FiltersComponent,
+    GridContainerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
