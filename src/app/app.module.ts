@@ -12,6 +12,8 @@ import { SharedModule } from './shared/shared.module';
 import { FiltersComponent } from './components/filters/filters.component';
 import { GridContainerComponent } from './components/grid-container/grid-container.component';
 import { ReservationsComponent } from './components/reservations/reservations.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ReservationsComponent } from './components/reservations/reservations.co
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
