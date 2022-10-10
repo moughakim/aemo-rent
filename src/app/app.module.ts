@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SharedModule } from './shared/shared.module';
 import { FiltersComponent } from './components/filters/filters.component';
 import { GridContainerComponent } from './components/grid-container/grid-container.component';
+import { ReservationsComponent } from './components/reservations/reservations.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { GridContainerComponent } from './components/grid-container/grid-contain
     HeaderComponent,
     FooterComponent,
     FiltersComponent,
-    GridContainerComponent
+    GridContainerComponent,
+    ReservationsComponent
   ],
   imports: [
     BrowserModule,

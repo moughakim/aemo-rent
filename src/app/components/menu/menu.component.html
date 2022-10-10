@@ -1,15 +1,10 @@
 <mat-drawer-container class="menu-container" autosize>
-    <mat-drawer #drawer class="menu-sidenav" mode="side">
+    <mat-drawer class="menu-sidenav" mode="side" opened>
         <p>Filtres</p>
         <app-filters></app-filters>
     </mat-drawer>
 
     <div class="menu-sidenav-content">
-
-        <button mat-icon-button class="show-filters" (click)="drawer.toggle()"
-            aria-label="Open and close sidenav to show filters">
-            <mat-icon>kitchen</mat-icon>
-        </button>
         <app-grid-container></app-grid-container>
     </div>
 
