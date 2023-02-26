@@ -1,23 +1,26 @@
 <div>
-    <h3>Produit</h3>
+    <mat-form-field appearance="fill">
+        <mat-label>Recherche</mat-label>
+        <input matInput [(ngModel)]="searchTerm" />
+        <mat-icon matPrefix>search</mat-icon>
+    </mat-form-field>
+</div>
+<div>
     <mat-radio-group class="filter-product-radio-group" [(ngModel)]="filterProductSelected">
         <mat-radio-button class="filter-product-radio-button" *ngFor="let product of products" [value]="product">
             {{product}}
         </mat-radio-button>
     </mat-radio-group>
 </div>
-<mat-divider class="filter-divider"></mat-divider>
-<div>
-    <h3>Prix</h3>
+<!-- <div>
     <mat-form-field>
         <input matInput placeholder="Prix min" type="number" [(ngModel)]="priceMin">
     </mat-form-field>
     <mat-form-field>
         <input matInput placeholder="Prix max" type="number" [(ngModel)]="priceMax">
     </mat-form-field>
-</div>
+</div> -->
 <mat-divider class="filter-divider"></mat-divider>
 <div class="filter-calendar-section">
-    <h3>Disponibilité</h3>
     <mat-calendar [(selected)]="selected"></mat-calendar>
 </div>

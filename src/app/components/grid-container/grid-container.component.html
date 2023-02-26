@@ -1,19 +1,22 @@
 <div class="content">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of listProducts">
             <mat-card class="mat-elevation-z4">
                 <mat-card-header>
-                    <mat-card-title>Kaftan Ransy</mat-card-title>
+                    <!-- name -->
+                    <mat-card-title>{{product.name}}</mat-card-title>
                 </mat-card-header>
-                <img mat-card-image src="/assets/img/robe_1.png" alt="Robe">
+                <!-- image of the product -->
+                <img mat-card-image [src]="product.thumbnail" alt="Robe">
                 <mat-card-content>
+                    <!-- description of the product -->
                     <p>
-                        Kaftan en soie et broderie de perles et de sequins.
+                        {{product.description}}
                     </p>
                 </mat-card-content>
                 <mat-card-actions>
                     <button mat-button>Réserver</button>
-                    <button mat-button>Détails</button>
+                    <button mat-button (click)="openProductDetailsDialog()">Détails</button>
                 </mat-card-actions>
             </mat-card>
         </div>

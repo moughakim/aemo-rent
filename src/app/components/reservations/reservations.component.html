@@ -1,1 +1,96 @@
-<p>reservations works!</p>
+<mat-drawer-container class="reservation-drawer-container">
+    <mat-drawer mode="side" opened>
+        <div>
+            <div class="reservation-month-calendar">
+                <mat-calendar></mat-calendar>
+            </div>
+            <div class="reservation-month-calendar">
+                <mat-calendar></mat-calendar>
+            </div>
+            <div class="reservation-month-calendar">
+                <mat-calendar></mat-calendar>
+            </div>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+        <!-- add new reservation -->
+
+        <!-- search for existing reservation -->
+        <div>
+            <mat-form-field appearance="fill" class="search-bar-full-width">
+                <mat-label>Rechercher une reservation</mat-label>
+                <input matInput [(ngModel)]="searchReservationTerm" />
+                <mat-icon matPrefix>search</mat-icon>
+            </mat-form-field>
+        </div>
+
+        <!-- loop to load all reservations by date
+        reservations will be encapsulated in an accordion -->
+
+        <div>
+            <h3>Lundi 04 Avril 2022</h3>
+            <mat-accordion>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            #00452
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            [14:00-19:00] - Zeralda
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the panel.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            #00453
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            [16:00-22:00] - Boumerdes
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I exist</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+
+            <h3>Mercredi 06 Juillet 2022</h3>
+            <mat-accordion>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            #00454
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            [14:00-19:00] - Alger
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>This is the primary content of the panel.</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            #00455
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            [16:00-22:00] - Blida
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I exist</p>
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            #00456
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            [16:00-22:00] - Hamiz
+                        </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <p>I'm visible because I exist</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+
+    </mat-drawer-content>
+</mat-drawer-container>

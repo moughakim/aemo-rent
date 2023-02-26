@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationsComponent implements OnInit {
 
+  searchReservationTerm: string;
+
   constructor() { }
 
   ngOnInit(): void {

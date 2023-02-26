@@ -8,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FiltersComponent implements OnInit {
 
   filterProductSelected = 'Tout';
-  products: string[] = ['Robe', 'Bijoux', 'Tout'];
+  products: string[] = ['Tout', 'Robe Blanche', 'Robe de soirée', 'Kaftan', 'Bedroune', 'Karakou', 'Fergani', 'Chaoui', 'Kabyle/Berbere', 'Oranais'];
   selected: Date | null;
-  priceMin = 0;
-  priceMax = 1000;
+  searchTerm: string;
 
   constructor() { }
 
@@ -19,3 +18,4 @@ export class FiltersComponent implements OnInit {
   }
 
 }
+
