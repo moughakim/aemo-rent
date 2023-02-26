@@ -14,6 +14,9 @@ import { GridContainerComponent } from './components/grid-container/grid-contain
 import { ReservationsComponent } from './components/reservations/reservations.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { ReservationFormComponent } from './components/reservation-form/reservation-form.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     FiltersComponent,
     GridContainerComponent,
-    ReservationsComponent
+    ReservationsComponent,
+    ProductDetailsComponent,
+    ReservationFormComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
